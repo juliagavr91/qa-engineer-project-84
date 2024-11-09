@@ -1,0 +1,112 @@
+---
+test-cases:
+  - summary: |
+      Добавление товара в корзину и просмотр содержимого корзины
+    status: pass
+bugreports: []
+---
+test-cases:
+  - summary: |
+      Проверка возможности оформления заказа
+    status: pass
+bugreports: []
+---
+test-cases:
+  - summary: |
+      Возможность искать товары по категориям
+    status: pass
+bugreports: []
+---
+test-cases:
+  - summary: |
+      Возможность фильтровать товары по производителю
+    status: pass
+bugreports: []
+---
+test-cases:
+  - summary: |
+      Возможность просматривать подробную информацию о товаре
+    status: pass
+bugreports: []
+---
+test-cases:
+  - summary: |
+      Сайт должен быть совместим с последними версиями браузеров
+    status: pass
+bugreports: []
+---
+test-cases:
+  - summary: |
+      Сайт должен быть доступен на различных устройствах
+    status: pass
+bugreports: []
+---
+test-cases:
+  - summary: |
+      Сайт должен быть безопасным и защищать данные пользователя
+    status: pass
+bugreports: []
+---
+test-cases:
+  - summary: |
+      Сайт должен иметь мобильную версию
+    status: pass
+bugreports: []
+---
+test-cases:
+  - summary: |
+      Сайт должен иметь мобильную версию
+    status: pass
+bugreports: []
+---
+test-cases:
+  - summary: |
+      При обновлении страницы интернет магазина выбранный язык должен сохранятся
+environment: |
+https://products-store-git-v2bugfixes-hexlet-components.vercel.app
+steps-to-reproduce: |
+- Открываем страницу интернет магазина
+- Выбираем в разделе "Language" язык "Russian"
+- Обновляем страницу
+expected-result: |
+Выбранный язык должен сохранятся после обновления страницы
+actual-result: |
+После обновления страницы язык обратно поменялся на анлийский
+---
+test-cases:
+  - summary: |
+      При выборе языка "Russian" на странице интернет магазина, описание товаров не меняется а остается на английском языке
+environment: |
+https://products-store-git-v2bugfixes-hexlet-components.vercel.app
+steps-to-reproduce: |
+- Открываем страницу интернет магазина
+- Выбираем в разделе "Language" язык ---
+test-cases:
+  - summary: |
+      При обновлении страницы интернет магазина выбранный язык должен сохранятся
+environment: |
+https://products-store-git-v2bugfixes-hexlet-components.vercel.app
+steps-to-reproduce: |
+- Открываем страницу интернет магазина
+- Выбираем в разделе "Language" язык "Russian"
+- Обновляем страницу
+expected-result: |
+Выбранный язык должен сохранятся после обновления страницы
+actual-result: |
+После обновления страницы язык обратно поменялся на анлийский
+
+
+expected-result: |
+Выбранный язык должен переводить всю страницу магазина а не только часть
+actual-result: |
+После выбора языка "Russian" описание товаров остается неизменным, т.е. на английском языке
+
+
+
+
+
+
+
+
+
+
