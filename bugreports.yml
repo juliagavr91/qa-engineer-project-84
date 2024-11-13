@@ -1,6 +1,6 @@
 ---
 - summary: |
-    При выборе русского языка не менятся описание товара
+    При выборе русского языка не менятся язык описания товара
   environment: |
     https://hexlet-products-store.vercel.app
   steps-to-reproduce: |
