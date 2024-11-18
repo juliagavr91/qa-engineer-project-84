@@ -1,9 +1,10 @@
+---
 - summary: |
     Добавление товара в корзину
   requirement: |
     Пользователь должен иметь возможность добавлять товары в корзину
   prerequisites: |
-    Открыта страница интернет магазина
+    Открыта страница интернет магазина https://hexlet-products-store.vercel.app
   test-data: |
     - Выбрать товар. Пример "Essence Mascara Lash Princess"
   steps:
@@ -17,7 +18,7 @@
   requirement: |
     Пользователь должен просматривать содержимое корзины
   prerequisites: |
-    Открыта страница интернет магазина
+    Открыта страница интернет магазина https://hexlet-products-store.vercel.app
   test-data: |
     - Выбрать товар. Пример "Essence Mascara Lash Princess"
   steps:
@@ -33,7 +34,7 @@
   requirement: |
     При успешном распределении товаров по категориям, товары должны правильно распределится по категорям "beauty", "fragrances", "furniture", "groceries".
   prerequisites: |
-    Открыта страница интернет магазина
+    Открыта страница интернет магазина https://hexlet-products-store.vercel.app
   test-data: |
     - Выбираем категорию, например "beauty"
   steps:
@@ -51,7 +52,7 @@
   requirement: |
     При выборе определенного производителя должны отображаться только те товары, которые относятся к этому производителю
   prerequisites: |
-    Открыта страница интернет магазина
+    Открыта страница интернет магазина https://hexlet-products-store.vercel.app
   test-data: |
     - Выбираем бренд(производителя) "Essence" и "Chanel" 
   steps:
@@ -65,7 +66,7 @@
   requirement: |
     Каждый товар имеет описание. Подробную информацию можно прочитатать кликнув на определенный товар
   prerequisites: |
-    Открыта страница интернет магазина
+    Открыта страница интернет магазина https://hexlet-products-store.vercel.app
   test-data: |
     - Выбираем товар к примеру "Red Lipstick"
   steps:
@@ -79,7 +80,7 @@
   requirement: |
     Пользователь должен иметь возможность просматривать товары
   prerequisites: |
-    Открыта страница интернет магазина
+    Открыта страница интернет магазина https://hexlet-products-store.vercel.app
   test-data: |
     - Быстрый просмотр товаров на главной старнице интернет магазина
   steps:
@@ -93,7 +94,7 @@
   requirement: |
     Выбраны браузеры "Google chrome", "Opera", "Firefox", "Safari" сайт должен открываться корректно на всех выбранных браузерах
   prerequisites: |
-    - Открыта страница интернет магазина на разных браузерах 
+    - Открыта страница интернет магазина на разных браузерах https://hexlet-products-store.vercel.app
   test-data: |
     - Копируем ссылку интернет магазина https://hexlet-products-store.vercel.app и открываем на разных браузерах
   steps:
@@ -111,7 +112,7 @@
   requirement: |
     Должен быть оптимизирован для просмотра с различных устройств
   prerequisites: |
-    Открыта страница интернет магазина и DevTools
+    Открыта страница интернет магазина https://hexlet-products-store.vercel.app и DevTools 
   test-data: |
     Тестовые данные
     Как пример выбраны устройства мобильные и планшеты
@@ -134,7 +135,7 @@
   requirement: |
     Все данные, которые передаются от клиента на сервер, должны передаваться не в открытом, а в зашифрованном виде "HTTPS"
   prerequisites: |
-     Открыта страница интернет магазина
+     Открыта страница интернет магазина https://hexlet-products-store.vercel.app
   test-data: |
     Смотрим на адресную строку. Тип протокола должен быть "HTTPS"
     https://hexlet-products-store.vercel.app
