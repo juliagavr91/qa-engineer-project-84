@@ -6,7 +6,7 @@
   prerequisites: |
     Открыта страница интернет магазина https://hexlet-products-store.vercel.app
   test-data: |
-    - Выбрать товар. Пример "Essence Mascara Lash Princess"
+    - Выбрать любой товар. 
   steps:
     - Нажимаем на выбранный товар
     - Нажимаем кнопку "В корзину"
@@ -20,7 +20,7 @@
   prerequisites: |
     Открыта страница интернет магазина https://hexlet-products-store.vercel.app
   test-data: |
-    - Выбрать товар. Пример "Essence Mascara Lash Princess"
+    - Выбрать любой товар. Пример "Essence Mascara Lash Princess"
   steps:
     - Нажимаем на выбранный товар
     - Нажимаем кнопку "В корзину"
@@ -54,7 +54,7 @@
   prerequisites: |
     Открыта страница интернет магазина https://hexlet-products-store.vercel.app
   test-data: |
-    - Выбираем бренд(производителя) "Essence" и "Chanel" 
+    - Выбираем любой бренд(производителя) к примеру "Essence" и "Chanel" 
   steps:
     - Проверяем все ли товары  соответвуют выбранным производителям
     - Далее выбираем других производителей и повторяем шаги для проверки
@@ -68,7 +68,7 @@
   prerequisites: |
     Открыта страница интернет магазина https://hexlet-products-store.vercel.app
   test-data: |
-    - Выбираем товар к примеру "Red Lipstick"
+    - Выбираем любой товар. К примеру "Red Lipstick"
   steps:
     - Нажимаем на товар, открывается страница товара
     - Проверем отличается ли описание от описания на главной странице магазина
