@@ -1,107 +1,97 @@
----
-test-cases:
-  - summary: |
-      Добавление товара в корзину и просмотр содержимого корзины
-    status: pass
-bugreports: []
----
-test-cases:
-  - summary: |
-      Проверка возможности оформления заказа
-    status: pass
-bugreports: []
----
-test-cases:
-  - summary: |
-      Возможность искать товары по категориям
-    status: pass
-bugreports: []
----
-test-cases:
-  - summary: |
-      Возможность фильтровать товары по производителю
-    status: pass
-bugreports: []
----
-test-cases:
-  - summary: |
-      Возможность просматривать подробную информацию о товаре
-    status: pass
-bugreports: []
----
-test-cases:
-  - summary: |
-      Сайт должен быть совместим с последними версиями браузеров
-    status: pass
-bugreports: []
----
-test-cases:
-  - summary: |
-      Сайт должен быть доступен на различных устройствах
-    status: pass
-bugreports: []
----
-test-cases:
-  - summary: |
-      Сайт должен быть безопасным и защищать данные пользователя
-    status: pass
-bugreports: []
----
-test-cases:
-  - summary: |
-      Сайт должен иметь мобильную версию
-    status: pass
-bugreports: []
----
-test-cases:
-  - summary: |
-      Сайт должен иметь мобильную версию
-    status: pass
-bugreports: []
----
-test-cases:
-  - summary: |
-      При обновлении страницы интернет магазина выбранный язык должен сохранятся
-environment: |
-https://products-store-git-v2bugfixes-hexlet-components.vercel.app
-steps-to-reproduce: |
-- Открываем страницу интернет магазина
-- Выбираем в разделе "Language" язык "Russian"
-- Обновляем страницу
-expected-result: |
-Выбранный язык должен сохранятся после обновления страницы
-actual-result: |
-После обновления страницы язык обратно поменялся на анлийский
----
-test-cases:
-  - summary: |
-      При выборе языка "Russian" на странице интернет магазина, описание товаров не меняется а остается на английском языке
-environment: |
-https://products-store-git-v2bugfixes-hexlet-components.vercel.app
-steps-to-reproduce: |
-- Открываем страницу интернет магазина
-- Выбираем в разделе "Language" язык ---
-test-cases:
-  - summary: |
-      При обновлении страницы интернет магазина выбранный язык должен сохранятся
-environment: |
-https://products-store-git-v2bugfixes-hexlet-components.vercel.app
-steps-to-reproduce: |
-- Открываем страницу интернет магазина
-- Выбираем в разделе "Language" язык "Russian"
-- Обновляем страницу
-expected-result: |
-Выбранный язык должен сохранятся после обновления страницы
-actual-result: |
-После обновления страницы язык обратно поменялся на анлийский
+- summary: |
+    Просматривать содержимое корзины
+  status: pass
 
+- summary: |
+    Возможность добавление товара через главную страницу интернет магазина
+  status: pass
 
-expected-result: |
-Выбранный язык должен переводить всю страницу магазина а не только часть
-actual-result: |
-После выбора языка "Russian" описание товаров остается неизменным, т.е. на английском языке
+- summary: |
+    Возможность добавление товара в корзину через страницу товара
+  status: pass
 
+- summary: |
+    Пользователь должен иметь возможность искать товары по категории
+  status: pass
 
+- summary: |
+    Пользователь должен иметь возможность искать товары по ключевому слову
+  status: pass
+
+- summary: |
+    Пользователь должен иметь возможность фильтровать товары по производителю(бренду)
+  status: pass
+
+- summary: |
+    Пользователь должен иметь возможность фильтровать товары по цене
+  status: pass
+
+- summary: |
+    Проверка фильтра по наличию товаров
+  status: pass
+
+- summary: |
+    Проверка удаления товара из корзины
+  status: pass
+
+- summary: |
+    Добавление нескольких одинаковых товаров в корзину
+  status: pass
+
+- summary: |
+    Добавление разных товаров в корзину
+  status: pass
+
+- summary: |
+    Возможность очистить корзину
+  status: pass
+  
+- summary: |
+    После удаления товара из корзины можно продолжить покупки
+  status: pass
+
+- summary: |
+    Оформление заказа
+  status: pass
+
+- summary: |
+    Пользователь должен иметь возможность просматривать подробную информацию о товаре т.е. название, рейтинг, цена со скидкой и без нее.
+  status: pass
+
+- summary: |
+    Возможность просматривать товары т.е. название, цена со скидкой и без нее,без перехода на страницу
+  status: pass
+
+- summary: |
+    Сайт должен быть совместим с последними версиями браузеров
+  status: pass
+
+- summary: |
+    Сайт должен быть доступен на различных устройствах
+  status: pass
+
+- summary: |
+    Изменение языка в интеренет магазине
+  status: pass
+
+- summary: |
+   Переход на страницу оплаты
+   status: fail
+
+bugreports:
+  - summary: |
+      Пустая категория без названия
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app
+    steps-to-reproduce: |
+      - Открываем главную страницу интернет магазина
+      - Нажимаем выбрать категорию
+    expected-result: |
+      4 категории на выбор : beauty, furniture, fragrances, groceries
+    actual-result: |
+      Дополнительно отображается одна пустая категория, которая возвращает на главную страницу
+      
+    
 
 
 
