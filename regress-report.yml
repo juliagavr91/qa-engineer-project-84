@@ -81,7 +81,7 @@
 
 bugreports:
   - summary: |
-      Пустая категория без названия
+      Пустая категория
     environment: |
       https://products-store-git-v2bugfixes-hexlet-components.vercel.app
     steps-to-reproduce: |
