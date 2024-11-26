@@ -76,7 +76,7 @@
   status: pass
 
 - summary: |
-   Переход на страницу оплаты
-   status: fail
+    Переход на страницу оплаты
+  status: fail
   
   
