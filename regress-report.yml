@@ -77,9 +77,9 @@
 
 - summary: |
     Переход на страницу оплаты
-   status: fail
+  status: fail
 
-bugreports:
+  bugreports:
   - summary: |
       Пустая категория
     environment: |
