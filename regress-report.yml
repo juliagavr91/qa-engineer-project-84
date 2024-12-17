@@ -91,7 +91,7 @@ test-cases:
     Проверка на исходящие запросы при оформлении заказа
   status: fail
   
-  bugreports:
+bugreports:
 - summary: |
     Пустая категория
   environment: |
