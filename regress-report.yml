@@ -20,14 +20,14 @@ test-cases:
     Пользователь должен иметь возможность искать товары по ключевому слову
   status: pass
 
-- summary: >
+- summary: |
     Пользователь должен иметь возможность фильтровать товары по
     производителю(бренду)
   status: pass
 
 - summary: |
     Пользователь должен иметь возможность фильтровать товары по цене
-  status: pass
+  status: fail
 
 - summary: |
     Проверка фильтра по наличию товаров
@@ -57,12 +57,12 @@ test-cases:
     Оформление заказа
   status: pass
 
-- summary: >
+- summary: |
     Пользователь должен иметь возможность просматривать подробную информацию о
-    товаре т.е. название, рейтинг, цена со скидкой и без нее.
+    товаре т.е. название, цена со скидкой и без нее.
   status: pass
 
-- summary: >
+- summary: |
     Возможность просматривать товары т.е. название, цена со скидкой и без
     нее,без перехода на страницу
   status: pass
@@ -73,29 +73,63 @@ test-cases:
 
 - summary: |
     Сайт должен быть доступен на различных устройствах
-  status: pass
+  status: fail
 
 - summary: |
-    Изменение языка в интеренет магазине
-  status: pass
+    Изменение языка на русский в интернет магазине
+  status: fail
 
 - summary: |
     Переход на страницу оплаты
   status: fail
+
+- summary: |
+    Изменение языка с русского на анлийский в интернет магазине
+  status: pass
+
+- summary: |
+    Проверка на исходящие запросы при оформлении заказа
+  status: fail
   
   bugreports:
-    - summary: |
-        Пустая категория
-      environment: |
-        https://products-store-git-v2bugfixes-hexlet-components.vercel.app
-      steps-to-reproduce: |
-        - Открываем главную страницу интернет магазина
-        - Нажимаем выбрать категорию
-      expected-result: |
-        4 категории на выбор : beauty, furniture, fragrances, groceries
-      actual-result: >
-        Дополнительно отображается одна пустая категория, которая возвращает на
-        главную страницу
+- summary: |
+    Пустая категория
+  environment: |
+    https://products-store-git-v2bugfixes-hexlet-components.vercel.app
+  steps-to-reproduce: |
+    - Открываем главную страницу интернет магазина
+    - Нажимаем выбрать категорию
+  expected-result: |
+    4 категории на выбор : beauty, furniture, fragrances, groceries
+  actual-result: >
+    Дополнительно отображается одна пустая категория, которая возвращает на главную страницу
+
+- summary: |
+    При открытии интернет магазина с мобильных устройств строка поиска и фильтры находятся в самом низу страницы
+  environment: |
+    https://products-store-git-v2bugfixes-hexlet-components.vercel.app
+  steps-to-reproduce: |
+    - Открываем главную страницу интернет магазина
+    - Проматываем до конца страницы
+  expected-result: |
+    Строка поиска и фильтры должны находится в верхней части сайта
+  actual-result: >
+    Строка поиска и фильтры находятся в в самом низу интернет магазина
+
+- summary: |
+    Оформление заказа
+  environment: |
+    https://products-store-git-v2bugfixes-hexlet-components.vercel.app
+  steps-to-reproduce: |
+    - Открываем главную страницу интернет магазина
+    - Добавляем товар в корзину
+    - Переходим в корзину
+    - Нажимаем кнопку оформить заказ
+  expected-result: |
+    Выходит модальное окно "Заказ успешно оформлен"
+  actual-result: |
+    Выходить модальное окно с текстом "Заказ успешно формлен"
+    
 
 
 
