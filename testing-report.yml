@@ -86,5 +86,9 @@
 - summary: |
     Проверка на запросы
   status: fail
+
+- summary: |
+    Проверка хэштегов
+  status: fail
   
   
