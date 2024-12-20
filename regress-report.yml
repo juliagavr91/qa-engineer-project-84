@@ -121,7 +121,7 @@ bugreports:
     Строка поиска и фильтры находятся в в самом низу интернет магазина
 
 - summary: |
-    Оформление заказа
+    Ошибка при оформление заказа
   environment: |
     https://products-store-git-v2bugfixes-hexlet-components.vercel.app
   steps-to-reproduce: |
