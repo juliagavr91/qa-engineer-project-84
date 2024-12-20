@@ -88,8 +88,12 @@ test-cases:
   status: pass
 
 - summary: |
-    Проверка на исходящие запросы при оформлении заказа
+    Проверка на запросы
   status: fail
+
+- summary: |
+    Проверка хэштегов
+  status: pass
   
 bugreports:
 - summary: |
